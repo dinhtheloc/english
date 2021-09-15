@@ -1,8 +1,4 @@
 <mat-nav-list>
-  <a mat-list-item routerLink="/noun" 
-  [routerLinkActive]="['active']">Danh từ (NOUN)</a>
-  <a mat-list-item routerLink="/adjective" 
-  [routerLinkActive]="['active']">Tính từ (adjective)</a>
-  <a mat-list-item routerLink="/verb" 
-  [routerLinkActive]="['active']">Động từ (verb)</a>
+  <a *ngFor="let item of routers" mat-list-item routerLink="/{{item.path}}" 
+  [routerLinkActive]="['active']">{{item.display}}</a>
 </mat-nav-list>

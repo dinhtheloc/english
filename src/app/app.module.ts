@@ -13,6 +13,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import {MatChipsModule} from '@angular/material/chips';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
@@ -20,6 +21,8 @@ import { NounComponent } from './views/noun/noun.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import { AdjectiveComponent } from './views/adjective/adjective.component';
 import { VerbComponent } from './views/verb/verb.component';
+import { PresentContinuousComponent } from './views/present-continuous/present-continuous.component';
+import { SimplePastComponent } from './views/simple-past/simple-past.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +31,9 @@ import { VerbComponent } from './views/verb/verb.component';
     DashboardComponent,
     NounComponent,
     AdjectiveComponent,
-    VerbComponent
+    VerbComponent,
+    PresentContinuousComponent,
+    SimplePastComponent
   ],
   imports: [
     BrowserModule,
@@ -42,6 +47,7 @@ import { VerbComponent } from './views/verb/verb.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    MatChipsModule,
     MatGridListModule,
     MatCardModule,
     MatTabsModule

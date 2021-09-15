@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import Routers from '../router';
 
 @Component({
   selector: 'app-navigation',
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class NavigationComponent {
 
-
+  routers = Routers;
   constructor() { }
 
 }
