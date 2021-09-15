@@ -23,6 +23,7 @@ import { AdjectiveComponent } from './views/adjective/adjective.component';
 import { VerbComponent } from './views/verb/verb.component';
 import { PresentContinuousComponent } from './views/present-continuous/present-continuous.component';
 import { SimplePastComponent } from './views/simple-past/simple-past.component';
+import { AdverbComponent } from './views/adverb/adverb.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { SimplePastComponent } from './views/simple-past/simple-past.component';
     AdjectiveComponent,
     VerbComponent,
     PresentContinuousComponent,
-    SimplePastComponent
+    SimplePastComponent,
+    AdverbComponent
   ],
   imports: [
     BrowserModule,

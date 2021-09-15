@@ -3,12 +3,19 @@ import { AdjectiveComponent } from './views/adjective/adjective.component';
 import { VerbComponent } from './views/verb/verb.component';
 import { PresentContinuousComponent } from './views/present-continuous/present-continuous.component';
 import { SimplePastComponent } from './views/simple-past/simple-past.component';
+import { AdverbComponent } from './views/adverb/adverb.component';
 
 const Routers = [
+    
     {
-        display: 'Danh từ (NOUN)',
-        path: 'noun',
-        component: NounComponent
+        display: 'Động từ (verb)',
+        path: 'verb',
+        component: VerbComponent
+    },
+    {
+        display: 'Trạng từ (adverb)',
+        path: 'adverb',
+        component: AdverbComponent 
     },
     {
         display: 'Tính từ (adjective)',
@@ -16,9 +23,9 @@ const Routers = [
         component: AdjectiveComponent
     },
     {
-        display: 'Động từ (verb)',
-        path: 'verb',
-        component: VerbComponent
+        display: 'Danh từ (noun)',
+        path: 'noun',
+        component: NounComponent
     },
     {
         display: 'Hiện tại tiếp diễn (Present continuous)',
