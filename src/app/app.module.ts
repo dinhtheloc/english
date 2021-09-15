@@ -24,6 +24,7 @@ import { VerbComponent } from './views/verb/verb.component';
 import { PresentContinuousComponent } from './views/present-continuous/present-continuous.component';
 import { SimplePastComponent } from './views/simple-past/simple-past.component';
 import { AdverbComponent } from './views/adverb/adverb.component';
+import { PastContinuousComponent } from './views/past-continuous/past-continuous.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +36,8 @@ import { AdverbComponent } from './views/adverb/adverb.component';
     VerbComponent,
     PresentContinuousComponent,
     SimplePastComponent,
-    AdverbComponent
+    AdverbComponent,
+    PastContinuousComponent
   ],
   imports: [
     BrowserModule,

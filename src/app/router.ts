@@ -4,6 +4,7 @@ import { VerbComponent } from './views/verb/verb.component';
 import { PresentContinuousComponent } from './views/present-continuous/present-continuous.component';
 import { SimplePastComponent } from './views/simple-past/simple-past.component';
 import { AdverbComponent } from './views/adverb/adverb.component';
+import { PastContinuousComponent } from './views/past-continuous/past-continuous.component';
 
 const Routers = [
     
@@ -36,6 +37,11 @@ const Routers = [
         display: 'Quá khứ đơn (Simple past)',
         path: 'simple-past',
         component: SimplePastComponent
+    },
+    {
+        display: 'Quá khứ tiếp diễn (Past continuous)',
+        path: 'past-continuous',
+        component: PastContinuousComponent
     }
 ];
 
