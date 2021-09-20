@@ -25,6 +25,9 @@ import { PresentContinuousComponent } from './views/present-continuous/present-c
 import { SimplePastComponent } from './views/simple-past/simple-past.component';
 import { AdverbComponent } from './views/adverb/adverb.component';
 import { PastContinuousComponent } from './views/past-continuous/past-continuous.component';
+import { VocabularyComponent } from './views/vocabulary/vocabulary.component';
+
+import { WordPipe } from './views/vocabulary/pipe/word.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +40,9 @@ import { PastContinuousComponent } from './views/past-continuous/past-continuous
     PresentContinuousComponent,
     SimplePastComponent,
     AdverbComponent,
-    PastContinuousComponent
+    PastContinuousComponent,
+    VocabularyComponent,
+    WordPipe
   ],
   imports: [
     BrowserModule,
@@ -56,7 +61,7 @@ import { PastContinuousComponent } from './views/past-continuous/past-continuous
     MatCardModule,
     MatTabsModule
   ],
-  providers: [],
+  providers: [WordPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

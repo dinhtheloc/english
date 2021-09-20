@@ -1,0 +1,6 @@
+
+<mat-selection-list #shoes [multiple]="false">
+  <mat-list-option *ngFor="let item of listVocabulary">
+    <div [innerHtml]="wordPipe.transform(item.english, item.key_word)"></div>
+  </mat-list-option>
+</mat-selection-list>
