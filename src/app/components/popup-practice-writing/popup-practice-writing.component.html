@@ -1,0 +1,14 @@
+<h2 mat-dialog-title>Học từ</h2>
+<mat-dialog-content class="mat-typography">
+  <h3>Điền từ vào chỗ trống</h3>
+  <p>{{data.sentence}}</p>
+  <mat-form-field appearance="outline">
+    <mat-label>Chữ có {{data.key_word.length}} chữ cái</mat-label>
+    <input matInput [placeholder]="data.sentence" [maxLength]="data.key_word.length">
+  </mat-form-field>
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
+</mat-dialog-actions>

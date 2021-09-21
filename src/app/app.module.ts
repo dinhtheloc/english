@@ -6,19 +6,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MatSliderModule } from '@angular/material/slider';
 import { HeaderComponent } from './components/header/header.component';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 import { NavigationComponent } from './navigation/navigation.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import {MatChipsModule} from '@angular/material/chips';
+import { MatChipsModule } from '@angular/material/chips';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { NounComponent } from './views/noun/noun.component';
-import {MatTabsModule} from '@angular/material/tabs';
+import { MatTabsModule } from '@angular/material/tabs';
 import { AdjectiveComponent } from './views/adjective/adjective.component';
 import { VerbComponent } from './views/verb/verb.component';
 import { PresentContinuousComponent } from './views/present-continuous/present-continuous.component';
@@ -26,8 +26,11 @@ import { SimplePastComponent } from './views/simple-past/simple-past.component';
 import { AdverbComponent } from './views/adverb/adverb.component';
 import { PastContinuousComponent } from './views/past-continuous/past-continuous.component';
 import { VocabularyComponent } from './views/vocabulary/vocabulary.component';
-
+import { MatDialogModule } from '@angular/material/dialog';
 import { WordPipe } from './views/vocabulary/pipe/word.pipe';
+import { PopupPracticeWritingComponent } from './components/popup-practice-writing/popup-practice-writing.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +45,8 @@ import { WordPipe } from './views/vocabulary/pipe/word.pipe';
     AdverbComponent,
     PastContinuousComponent,
     VocabularyComponent,
-    WordPipe
+    WordPipe,
+    PopupPracticeWritingComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +63,10 @@ import { WordPipe } from './views/vocabulary/pipe/word.pipe';
     MatChipsModule,
     MatGridListModule,
     MatCardModule,
-    MatTabsModule
+    MatTabsModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [WordPipe],
   bootstrap: [AppComponent]
