@@ -12,7 +12,7 @@ export class PopupPracticeWritingComponent implements OnInit {
   constructor(@Inject(MAT_DIALOG_DATA) public data: Ivocabulary) { }
 
   ngOnInit(): void {
-    console.log(this.data);
+    console.log();
   }
 
   setSentence(sentence: string) {
